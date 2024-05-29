@@ -1,0 +1,20 @@
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #033fb6;
+  padding: 20px;
+  color: white;
+}
+
+select, button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+h2 {
+  margin: 10px 0;
+}
