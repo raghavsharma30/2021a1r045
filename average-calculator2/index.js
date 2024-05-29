@@ -1,11 +1,11 @@
 const express = require('express');
-const cors = require('cors'); // Import the cors middleware
+const cors = require('cors'); 
 const axios = require('axios');
 
 const app = express();
 const port = 9876;
 
-app.use(cors()); // Enable CORS for all routes
+app.use(cors()); 
 
 const windowSize = 10;
 let numberWindow = [];
