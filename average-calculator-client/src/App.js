@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 import './App.css';
 
 function App() {
@@ -18,10 +19,8 @@ function App() {
             setResponse(res.data);
         } catch (error) {
             if (axios.isAxiosError(error)) {
-               
                 console.error('Axios Error:', error.response.data);
             } else {
-               
                 console.error('Error fetching numbers:', error);
             }
         }
@@ -31,13 +30,13 @@ function App() {
         <div className="App">
             <header className="App-header">
                 <h1>Average Calculator</h1>
-                <select value={numberType} onChange={(e) => setNumberType(e.target.value)}>
+                <select className="form-select" value={numberType} onChange={(e) => setNumberType(e.target.value)}>
                     <option value="p">Prime</option>
                     <option value="f">Fibonacci</option>
                     <option value="e">Even</option>
                     <option value="r">Random</option>
                 </select>
-                <button onClick={fetchNumbers}>Fetch Numbers</button>
+                <button className="btn btn-primary" onClick={fetchNumbers}>Fetch Numbers</button>
                 {response && (
                     <div>
                         <h2>Previous State: {JSON.stringify(response.windowPrevState)}</h2>
