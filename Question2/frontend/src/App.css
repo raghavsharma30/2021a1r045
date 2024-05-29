@@ -1,0 +1,168 @@
+/* HomePage Component */
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e6f7ff;
+  color: #333;
+  padding: 20px;
+}
+
+.homepage-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ff6600;
+  text-align: center;
+}
+
+.homepage-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.3s ease;
+}
+
+.homepage-form:hover {
+  transform: scale(1.02);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.form-select:focus {
+  border-color: #ff6600;
+  outline: none;
+}
+
+.form-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #ff4500;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .homepage-title {
+    font-size: 2em;
+  }
+
+  .homepage-form {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .form-button {
+    font-size: 1em;
+  }
+}
+
+/* ProductList Component */
+.product-list-container {
+  padding: 20px;
+  background-color: #fff5e6;
+}
+
+.product-list-title {
+  font-size: 2em;
+  color: #cc3300;
+  margin-bottom: 20px;
+}
+
+.product-list-filters {
+  margin-bottom: 20px;
+}
+
+.product-list-filters label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.product-list-filters select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product-list-items {
+  list-style: none;
+  padding: 0;
+}
+
+.product-list-items li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.product-list-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.product-list-button {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-list-button:hover {
+  background-color: #ff4500;
+  transform: scale(1.05);
+}
+
+/* Products Component */
+.product-details-container {
+  padding: 20px;
+  background-color: #e6ffe6;
+}
+
+.product-details-title {
+  font-size: 2.5em;
+  color: #006600;
+  margin-bottom: 20px;
+}
+
+.products-info {
+  font-size: 1.2em;
+}
+
+.products-info p {
+  margin-bottom: 10px;
+}
+
